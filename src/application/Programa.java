@@ -1,12 +1,16 @@
 package application;
 
-import boardgame.Position;
+
+import chess.chessMath;
 
 public class Programa {
 
 	public static void main(String[] args) {
-		Position pos = new Position(3, 5);
-		System.out.println(pos);
+		
+		chessMath chessmath = new chessMath();
+		UI.printBoard(chessmath.getPieces());
+		
+		
 
 	}
 
