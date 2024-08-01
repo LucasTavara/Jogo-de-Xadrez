@@ -43,6 +43,10 @@ public Piece piece(Position position) {
 	
 }
 
+public void piece(Piece piece, Position position) {
+	pieces [position.getRow()][position.getColum()] = piece;
+	piece.position = position;
+}
 
 
 }
