@@ -26,7 +26,7 @@ public class Board {
 	}
 
 public Piece piece(int row, int column) {
-	// program defensive 
+	// defensive programming
 	if(!positionExists(row,column)) {
 		throw new BoardException("Position not on the board");
 	}
@@ -34,7 +34,7 @@ public Piece piece(int row, int column) {
 }
 
 public Piece piece(Position position) {
-	// program defensive 
+	// defesnive programming 
 	if(!positionExists(position)) {
 		throw new BoardException("Position not on the board");
 	}
