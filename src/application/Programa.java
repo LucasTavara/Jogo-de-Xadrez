@@ -20,7 +20,7 @@ public class Programa {
 		List<chessPiece> captured = new ArrayList<>();
 		
 		while(true) {
-		try {
+			try {
 			 UI.clearScreen();
 			 UI.printMatch(chessMath, captured);
 			 System.out.println();
@@ -51,7 +51,8 @@ public class Programa {
 			System.out.println(e.getMessage());
 			sc.nextLine();
 			
-		}
-   }
- } 
+		
+	  }
+    }
+  }
 }
